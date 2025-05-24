@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffa500, #ffcc80);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.icone {
+    width: 100px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.texte {
+    color: rgb(218, 0, 0);
+    font-size: 1rem;
+    transition: font-size 0.3s ease;
+}
+
+ul {
+    color: rgb(218, 0, 0);
+    padding-left: 20px;
+}
+
+.liens {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: linear-gradient(135deg, #5eaaff, #357edd);
+    background-size: 400% 400%;
+    animation: gradientMove 2s linear infinite;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+
+    border: none;
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.2s, padding 0.3s, font-size 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn img {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* 🌄 Mode paysage (16:9) */
+@media (min-aspect-ratio: 16/9) {
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .profil {
+        width: 60%;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .liens {
+        width: 35%;
+        align-items: flex-end;
+    }
+
+    .btn {
+        font-size: 1.8rem;
+        padding: 20px 40px;
+    }
+
+    .btn img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .icone {
+        width: 150px;
+    }
+
+    .texte {
+        font-size: 1.2rem;
+    }
+}
+
+/* 📱 Mode portrait (9:16) */
+@media (max-aspect-ratio: 9/16) {
+    .profil {
+        align-items: flex-start;
+        text-align: justify;
+        flex-direction: column;
+    }
+
+    .texte {
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: justify;
+    }
+
+    ul {
+        padding-left: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    ul li::before {
+        content: "• ";
+        color: rgb(218, 0, 0); /* même couleur que le texte */
+        font-weight: bold;
+    }
+
+    .icone {
+        width: 80px;
+    }
+
+    .liens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .btn img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
