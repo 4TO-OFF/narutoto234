@@ -141,7 +141,8 @@ ul {
 
     ul li::before {
         content: "• ";
-        color: rgb(218, 0, 0); /* même couleur que le texte */
+        color: rgb(218, 0, 0);
+
         font-weight: bold;
     }
 
