@@ -82,7 +82,6 @@ ul {
     100% { background-position: 0% 0%; }
 }
 
-/* 🌄 Mode paysage (16:9) */
 @media (min-aspect-ratio: 16/9) {
     body {
         display: flex;
@@ -121,7 +120,6 @@ ul {
     }
 }
 
-/* 📱 Mode portrait (9:16) */
 @media (max-aspect-ratio: 9/16) {
     .profil {
         align-items: flex-start;
