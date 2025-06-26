@@ -92,13 +92,21 @@ hr.separator {
 
 @media (max-width: 768px) {
   .liens.naruto {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
 
   .liens.naruto .btn {
-    width: calc(50% - 20px);
+    width: 48%; /* 2 par ligne avec petit espace */
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .liens.naruto .btn img {
+    width: 20px;
+    height: 20px;
   }
 }
