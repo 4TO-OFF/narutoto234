@@ -117,3 +117,35 @@ hr.separator {
   }
 }
 
+.separator-arrow {
+  text-align: center;
+  margin: 40px auto;
+  width: 100%;
+  font-size: 2rem;
+  color: white;
+  opacity: 0.8;
+  user-select: none;
+}
+
+.separator-arrow .arrow {
+  display: inline-block;
+  margin: 0 3px;
+  animation: floatDown 1.5s ease-in-out infinite;
+}
+
+.separator-arrow .arrow:nth-child(odd) {
+  animation-delay: 0s;
+}
+.separator-arrow .arrow:nth-child(even) {
+  animation-delay: 0.3s;
+}
+
+@keyframes floatDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
