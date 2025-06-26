@@ -172,4 +172,17 @@ hr.separator {
     width: 80%;
     opacity: 0.6;
 }
+@media (max-width: 768px) {
+  .separator {
+    margin: 20px auto; /* réduit la marge pour rapprocher */
+  }
 
+  .profil:last-of-type {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .liens:last-of-type {
+    margin-top: 10px;
+  }
+}
