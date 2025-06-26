@@ -117,4 +117,13 @@ hr.separator {
   }
 }
 
+.separator-arrow {
+  text-align: center;
+  margin: 40px auto;
+  font-size: 2rem;
+  color: white;
+  opacity: 0.8;
+  letter-spacing: 10px;
+  user-select: none;
+}
 
