@@ -85,24 +85,34 @@ hr.separator {
     100% { background-position: 0% 0%; }
 }
 
-/* --------- MOBILE GRILLE POUR NARUTOTO --------- */
 @media (max-width: 768px) {
-  .liens-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    justify-items: center;
+  .liens.naruto {
+    display: block;
     width: 100%;
+    padding: 0;
   }
 
-  .liens-grid .btn {
-    width: 90%;
+  #btn1, #btn3 {
+    float: left;
+    width: 48%;
+    margin: 1% 1% 10px 0;
     box-sizing: border-box;
+  }
+
+  #btn2, #btn4 {
+    float: right;
+    width: 48%;
+    margin: 1% 0 10px 1%;
+    box-sizing: border-box;
+  }
+
+  /* Fix image et texte */
+  .btn {
     font-size: 1rem;
     padding: 12px;
   }
 
-  .liens-grid .btn img {
+  .btn img {
     width: 20px;
     height: 20px;
   }
