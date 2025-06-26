@@ -92,14 +92,15 @@ hr.separator {
 
 @media (max-width: 768px) {
   .liens.naruto {
-    display: grid;
+    display: grid !important; /* Écrase le display:flex par défaut */
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     justify-items: center;
+    width: 100%;
   }
 
   .liens.naruto .btn {
-    width: 100%;
+    width: 90%; /* prend bien la moitié de la grille avec un espace */
     box-sizing: border-box;
     text-align: center;
     font-size: 1rem;
