@@ -147,3 +147,22 @@ hr.separator {
     transform: translateY(-10px);
   }
 }
+
+.separator-arrow span {
+  display: inline-block;
+  animation: waveArrow 1s infinite ease-in-out, gradientShift 3s linear infinite;
+  background: linear-gradient(to bottom, #ccc, #666, #ccc);
+  background-size: 100% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
