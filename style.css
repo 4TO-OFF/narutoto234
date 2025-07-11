@@ -1,12 +1,11 @@
 body {
     margin: 0;
-    padding: 20px; /* garde ton padding */
+    padding: 20px; 
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #ffa500, #ffcc80);
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    /* pas de display flex ni autre ici, on garde simple */
 }
 
 .profil {
@@ -149,10 +148,9 @@ hr.separator {
   }
 }
 
-/* === FOOTER FIXE EN BAS === */
 footer {
   background-color: #1f1f1f;
-  padding: 15px 20px; /* padding horizontal aussi pour coller bien aux bords */
+  padding: 15px 20px; 
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #eee;
@@ -163,7 +161,7 @@ footer {
   left: 0;
   font-weight: 500;
   font-size: 0.9rem;
-  z-index: 1000; /* toujours devant */
+  z-index: 1000;
 }
 
 footer a {
